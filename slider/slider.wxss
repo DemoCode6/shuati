@@ -1,0 +1,38 @@
+page{font-size: 30rpx;}
+.swiper-item{padding: 30rpx 20rpx;}
+.content{
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow:0 0 9rpx 3rpx #ccc;
+  margin-right: 10rpx;
+}
+swiper{height: 100vh;}
+.swiper-item text:nth-of-type(1){
+  line-height: 40rpx;
+  letter-spacing: 2rpx;
+}
+.content{
+  margin: 15rpx;
+}
+.submit_d{
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  background-image: linear-gradient(to right, #1fc8db , #6699FF, #6666FF );
+  border-radius: 50rpx;
+  padding: 15rpx 0;
+  color: #fff;
+  margin-top: 20rpx;
+}
+
+
+.backgroud {
+  background-color: rgb(182, 181, 181);
+  color: #fff;
+}
+

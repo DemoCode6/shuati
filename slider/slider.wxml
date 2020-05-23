@@ -1,0 +1,14 @@
+<swiper current="{{current}}" bindchange="swiper_change">
+  <block wx:for="{{main_text}}" wx:for-index="idx" wx:key="item">
+    <swiper-item>
+      <view class="swiper-item">
+        <text>{{ item.type== 1 ? '单选题' : '多选题' }} : {{item.title}}</text>
+        <view wx:for="{{item.option}}" wx:for-item="val" wx:for-index="idx2" wx:key="val" data-check="{{val.check}}" data-idx2="{{idx2}}" catchtap="back" data-idx="{{idx}}" data-type="{{item.type}}">
+          <text class="content {{val.check ? 'backgroud:#e1e1e1;' : '' }}">{{val.content1}}</text>
+          <text>{{val.content_text1}}</text>
+        </view>
+        <view bindtap="jump_page" class="submit_d" wx:if="{{item.type==2}}">确认答案</view>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
